@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="JVMZPE8JHHoDcrqAT8KvfiuwQUMceRKAh3GQWVFw">
+    <meta name="csrf-token" content="xyqnlbxYEvOxa5U8TVHVk2TVwlgP873a16iT2MXc">
 
     
     <title>មត្តេយ្យសិក្សា (Kindergarten Program) | សាលា អាយឌាលី អន្តរជាតិ | iiS</title>
@@ -87,7 +87,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Sans+Khmer:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     
-    <link rel="preload" as="style" href="/iis-school-preview/build/assets/app-BMGsQrzk.css" /><link rel="modulepreload" as="script" href="/iis-school-preview/build/assets/app-C9pBIK4_.js" /><link rel="stylesheet" href="/iis-school-preview/build/assets/app-BMGsQrzk.css" data-navigate-track="reload" /><script type="module" src="/iis-school-preview/build/assets/app-C9pBIK4_.js" data-navigate-track="reload"></script>
+    <link rel="preload" as="style" href="/iis-school-preview/build/assets/app-BpTOLto2.css" /><link rel="modulepreload" as="script" href="/iis-school-preview/build/assets/app-C9pBIK4_.js" /><link rel="stylesheet" href="/iis-school-preview/build/assets/app-BpTOLto2.css" data-navigate-track="reload" /><script type="module" src="/iis-school-preview/build/assets/app-C9pBIK4_.js" data-navigate-track="reload"></script>
     <script id="browser-logger-active">
 (function() {
     const ENDPOINT = '/iis-school-preview/_boost/browser-logs';
@@ -539,13 +539,15 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         switchTo(lang) {
             const segments = window.location.pathname.split('/').filter(s => s !== '');
-            if (['km', 'en', 'zh'].includes(segments[0])) {
-                segments[0] = lang;
+            const locIndex = segments.findIndex(s => ['km', 'en', 'zh'].includes(s));
+            if (locIndex !== -1) {
+                segments[locIndex] = lang;
             } else {
                 segments.unshift(lang);
             }
-            const query  = window.location.search;
-            window.location.href = '/' + segments.join('/') + query;
+            const query = window.location.search;
+            const endsWithSlash = window.location.pathname.endsWith('/');
+            window.location.href = '/' + segments.join('/') + (endsWithSlash ? '/' : '') + query;
         }
     }"
      class="relative"
@@ -631,10 +633,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     <nav class="bg-white border-b border-border" aria-label="ការរុករកចម្បង">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="flex items-center justify-between h-16 md:h-20">
+            <div class="flex items-center justify-between h-16 md:h-20 flex-nowrap gap-2 sm:gap-4">
 
                 
-                <a href="/iis-school-preview/km" class="flex items-center gap-3 flex-shrink-0 group" aria-label="សាលា អាយឌាលី អន្តរជាតិ - site.home">
+                <a href="/iis-school-preview/km" class="flex items-center gap-3 flex-shrink-0 group" aria-label="សាលា អាយឌាលី អន្តរជាតិ - ទំព័រដើម">
                     <img src="/iis-school-preview/images/logo.png"
                          alt="សាលា អាយឌាលី អន្តរជាតិ Logo"
                          class="h-10 md:h-12 w-auto"
@@ -653,7 +655,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </a>
 
                 
-                <div class="hidden lg:flex items-center gap-0.5 xl:gap-1.5 text-xs xl:text-sm font-semibold">
+                <div class="hidden xl:flex items-center gap-0.5 2xl:gap-1.5 text-xs xl:text-sm font-semibold">
 
                     
                     <a href="/iis-school-preview/km"
@@ -821,13 +823,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             </a>
                         </div>
                     </div>
-                            <a href="/iis-school-preview/km/school-services" class="dropdown-item py-2" role="menuitem">
-                                <div class="font-bold text-xs">សេវាកម្ម</div>
-                                <div class="text-[10px] text-gray-500">សេវារថយន្ត អាហារ &amp; ថែទាំ</div>
-                            </a>
-                        </div>
-                    </div>
 
+                    
+                    <a href="/iis-school-preview/km/contact"
+                       class="nav-link whitespace-nowrap px-2 xl:px-2.5 py-2 ">
+                        ទំនាក់ទំនង
+                    </a>
 
                 </div>
 
@@ -852,8 +853,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </a>
 
                     
-                    <button x-data @click="$dispatch('toggle-mobile-nav')"
-                            class="lg:hidden p-2 text-navy hover:text-iis-blue transition-colors rounded-xl hover:bg-gray-100 focus:outline-none"
+                    <button x-data @click="$dispatch('toggle-mobile-nav'); window.dispatchEvent(new CustomEvent('toggle-mobile-nav'))"
+                            class="xl:hidden p-2 text-navy hover:text-iis-blue transition-colors rounded-xl hover:bg-gray-100 focus:outline-none"
                             aria-label="ម៉ឺនុយ" aria-expanded="false">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -868,7 +869,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div x-data="mobileNav()"
      @toggle-mobile-nav.window="toggle()"
-     class="lg:hidden">
+     class="xl:hidden">
 
     
     <div x-show="open" x-transition.opacity
@@ -1148,7 +1149,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <div class="bg-white rounded-3xl border border-border p-6 sm:p-8 shadow-sm">
                     <h2 class="text-xl sm:text-2xl font-bold text-navy mb-4 border-l-4 border-iis-green pl-3">
-                        site.program_overview
+                        ទិដ្ឋភាពទូទៅនៃកម្មវិធីសិក្សា
                     </h2>
                     <div class="text-gray-text text-sm sm:text-base leading-relaxed space-y-4">
                                                     កម្មវិធីមត្តេយ្យសិក្សានៅ iiS បង្កើតឡើងដើម្បីផ្ដល់ឱ្យកុមារនូវបរិយាកាសសិក្សាដ៏កក់ក្ដៅ សុវត្ថិភាព និងសម្បូរបែប។
@@ -1172,7 +1173,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span>មតិពិតពីអាណាព្យាបាលសិស្ស iiS</span>
             </div>
             <h3 class="text-xl sm:text-2xl font-bold text-navy">
-                site.parent_reviews_for_program
+                មតិយោបល់របស់អាណាព្យាបាលចំពោះកម្មវិធីសិក្សានេះ
             </h3>
             <p class="text-xs sm:text-sm text-gray-text mt-1">
                 យើងខ្ញុំតែងតែស្ដាប់ និងស្វាគមន៍រាល់មតិស្ថាបនារបស់លោកអ្នក ដើម្បីលើកកម្ពស់គុណភាពអប់រំ។
@@ -1215,7 +1216,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
 
         <form action="/iis-school-preview/km/comments" method="POST" class="space-y-4">
-            <input type="hidden" name="_token" value="JVMZPE8JHHoDcrqAT8KvfiuwQUMceRKAh3GQWVFw" autocomplete="off">
+            <input type="hidden" name="_token" value="xyqnlbxYEvOxa5U8TVHVk2TVwlgP873a16iT2MXc" autocomplete="off">
             
             <input type="hidden" name="commentable_type" value="App\Models\AcademicProgram">
             <input type="hidden" name="commentable_id" value="1">
@@ -1322,7 +1323,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     
                     <div class="pt-4 border-t border-border text-xs text-gray-text space-y-2">
-                        <div class="font-bold text-navy text-sm">site.admissions_office</div>
+                        <div class="font-bold text-navy text-sm">ការិយាល័យចុះឈ្មោះ:</div>
                         <div class="flex items-center gap-2">
                             <span class="text-iis-green font-bold">📞</span>
                             <a href="tel:+85512345678" class="text-navy font-semibold hover:text-iis-red">+855 12 345 678</a>
@@ -1336,7 +1337,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                                             <div class="pt-4 border-t border-border">
                             <h3 class="text-xs font-bold uppercase text-navy tracking-wider mb-3">
-                                site.other_programs
+                                កម្មវិធីសិក្សាផ្សេងទៀត:
                             </h3>
                             <div class="space-y-2">
                                                                                                         <a href="/iis-school-preview/km/academic-programs/primary-school"
@@ -1497,7 +1498,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         ព្រឹត្តិបត្រព័ត៌មាន
                     </h4>
                     <form action="/iis-school-preview/km/newsletter/subscribe" method="POST" class="space-y-2">
-                        <input type="hidden" name="_token" value="JVMZPE8JHHoDcrqAT8KvfiuwQUMceRKAh3GQWVFw" autocomplete="off">                        <div class="flex">
+                        <input type="hidden" name="_token" value="xyqnlbxYEvOxa5U8TVHVk2TVwlgP873a16iT2MXc" autocomplete="off">                        <div class="flex">
                             <input type="email" name="email" required
                                    placeholder="បញ្ចូលអ៊ីមែលរបស់អ្នក..."
                                    class="w-full bg-white/10 border border-white/20 text-white placeholder-gray-400 text-xs px-3 py-2 rounded-l-lg focus:outline-none focus:border-iis-blue">
