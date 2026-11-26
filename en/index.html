@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="vadddN9pg7JZfiDzQsc9ZEBLEE10TnBuQA32TSZP">
+    <meta name="csrf-token" content="BqR8OXiHKo5aee73uWCQMw1zSvLDrbly2aWGTp6A">
 
     
     <title>Premier Trilingual Education (Khmer • English • Chinese) &amp; STEAM AI | iiS</title>
@@ -63,7 +63,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Sans+Khmer:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     
-    <link rel="preload" as="style" href="/iis-school-preview/build/assets/app-Bu3R1-tM.css" /><link rel="modulepreload" as="script" href="/iis-school-preview/build/assets/app-C9pBIK4_.js" /><link rel="stylesheet" href="/iis-school-preview/build/assets/app-Bu3R1-tM.css" data-navigate-track="reload" /><script type="module" src="/iis-school-preview/build/assets/app-C9pBIK4_.js" data-navigate-track="reload"></script>
+    <link rel="preload" as="style" href="/iis-school-preview/build/assets/app-Cplak1sY.css" /><link rel="modulepreload" as="script" href="/iis-school-preview/build/assets/app-BfHChMrH.js" /><link rel="stylesheet" href="/iis-school-preview/build/assets/app-Cplak1sY.css" data-navigate-track="reload" /><script type="module" src="/iis-school-preview/build/assets/app-BfHChMrH.js" data-navigate-track="reload"></script>
     <script id="browser-logger-active">
 (function() {
     const ENDPOINT = '/iis-school-preview/_boost/browser-logs';
@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </a>
 
     
-    <header x-data="stickyHeader()" :class="scrolled ? 'shadow-md' : ''" class="sticky top-0 z-30 bg-white transition-shadow duration-300">
+    <header x-data="stickyHeader()" :class="scrolled ? 'shadow-lg glass-header' : 'bg-white'" class="sticky top-0 z-30 transition-all duration-300">
     <script>
         window.openHomeModal = function(modalName, tabName = 'overview') {
             const portal = document.getElementById('iis-home-portal');
@@ -816,9 +816,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     
                     <a href="#consultation"
-                       class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-iis-red hover:bg-iis-red-dark text-white font-bold text-xs md:text-sm shadow-sm hover:shadow transition-all whitespace-nowrap">
+                       class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-iis-red to-[#FF2E44] hover:from-[#D10017] hover:to-iis-red text-white font-bold text-xs md:text-sm shadow-md shadow-iis-red/20 hover:shadow-lg hover:shadow-iis-red/35 hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap group">
                         <span>Request Consultation</span>
-                        <span>→</span>
+                        <span class="group-hover:translate-x-1 transition-transform duration-200">→</span>
                     </a>
 
                     
@@ -1075,14 +1075,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="relative bg-navy text-white overflow-hidden py-16 lg:py-24">
     
-    <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 z-0 overflow-hidden">
         <img src="/iis-school-preview/images/hero-students.jpg"
              alt="សិស្សានុសិស្សសាលា អាយឌាលី អន្តរជាតិ (Ideally International School Students)"
-             class="w-full h-full object-cover object-[center_28%] opacity-40 sm:opacity-45"
+             class="w-full h-full object-cover object-[center_28%] opacity-40 sm:opacity-45 animate-hero-zoom"
              loading="eager"
              fetchpriority="high">
-        <div class="absolute inset-0 bg-gradient-to-r from-[#031138]/90 via-[#051C57]/80 to-[#0741E7]/35"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#031138]/95 via-[#051C57]/85 to-[#0741E7]/40"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-[#031138] via-transparent to-transparent"></div>
+        
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-iis-blue/30 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-32 w-[500px] h-[500px] bg-sky-500/15 rounded-full blur-3xl pointer-events-none"></div>
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
@@ -1091,15 +1094,18 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="lg:col-span-8 space-y-6">
                 
                 <div class="flex flex-wrap items-center gap-2.5">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-semibold tracking-wide text-blue-100">
-                        <span class="w-2 h-2 rounded-full bg-iis-green"></span>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-semibold tracking-wide text-blue-100 shadow-sm animate-float-badge">
+                        <span class="relative flex h-2.5 w-2.5">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-iis-green opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-iis-green"></span>
+                        </span>
                         <span>Learn Today, Lead Tomorrow.</span>
                         <span class="text-white/40 hidden sm:inline">|</span>
                         <span class="text-xs text-white/80 hidden sm:inline">Ideally International School (iiS)</span>
                     </div>
 
                     <a href="/iis-school-preview/en/promotions"
-                       class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-iis-red/90 hover:bg-iis-red text-white text-xs font-bold shadow-sm transition-colors">
+                       class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-iis-red/90 hover:bg-iis-red text-white text-xs font-bold shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                         <span>🏷️</span>
                         <span>Scholarship Up to 50%</span>
                     </a>
@@ -1137,16 +1143,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
                     <a href="#consultation"
-                       class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-iis-red hover:bg-iis-red-dark text-white font-bold text-sm sm:text-base shadow-lg shadow-iis-red/30 hover:shadow-xl transition-all duration-200 group min-h-[44px]">
+                       class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-iis-red to-[#FF2E44] hover:from-[#D10017] hover:to-iis-red text-white font-bold text-sm sm:text-base shadow-lg shadow-iis-red/30 hover:shadow-xl hover:shadow-iis-red/45 hover:-translate-y-0.5 transition-all duration-200 group min-h-[44px]">
                         <span>Request Consultation</span>
-                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                         </svg>
                     </a>
                     <a href="#programs"
-                       class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm sm:text-base border border-white/30 backdrop-blur-sm transition-all duration-200 min-h-[44px]">
+                       class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm sm:text-base border border-white/30 backdrop-blur-sm hover:-translate-y-0.5 transition-all duration-200 min-h-[44px] group">
                         <span>Explore Programs</span>
-                        <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 opacity-70 group-hover:translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
                     </a>
@@ -1195,11 +1201,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             
             <div class="lg:col-span-4 hidden lg:block">
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 bg-white/5 backdrop-blur-md">
-                    <img src="/iis-school-preview/images/school/classroom-students.jpg"
-                         alt="Faculty &amp; Leadership Team at Ideally International School"
-                         class="w-full h-80 object-cover">
-                    <div class="p-5 bg-gradient-to-b from-navy/95 to-navy text-white space-y-2">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 bg-white/5 backdrop-blur-md group hover-lift transition-all duration-300">
+                    <div class="overflow-hidden h-80">
+                        <img src="/iis-school-preview/images/school/classroom-students.jpg"
+                             alt="Faculty &amp; Leadership Team at Ideally International School"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 bg-gradient-to-b from-[#031138]/95 to-[#031138] text-white space-y-2">
                         <div class="flex items-center justify-between text-xs text-iis-green font-bold">
                             <span>✓ Dedicated Faculty &amp; Leadership</span>
                             <span>Local &amp; International</span>
@@ -1220,7 +1228,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="py-12 bg-white border-b border-gray-150">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 reveal fade-in-up">
             <div class="space-y-1.5 max-w-2xl">
                 <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-iis-blue font-bold text-xs uppercase tracking-wider">
                     Accreditations &amp; Partners
@@ -1233,7 +1241,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </p>
             </div>
             <div class="hidden md:flex items-center gap-2 text-xs text-gray-500 font-medium">
-                <span class="w-2.5 h-2.5 rounded-full bg-iis-green"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-iis-green animate-pulse"></span>
                 <span>National &amp; International Standards</span>
             </div>
         </div>
@@ -1241,11 +1249,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
             
-            <div class="bg-slate-50/80 hover:bg-white rounded-2xl p-5 border border-gray-200/80 hover:border-iis-blue shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col items-center text-center justify-between group">
+            <div class="reveal fade-in-up delay-100 bg-slate-50/80 hover:bg-white rounded-2xl p-5 border border-gray-200/80 hover:border-iis-blue shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col items-center text-center justify-between group">
                 <div class="h-20 flex items-center justify-center p-1 mb-3">
                     <img src="/iis-school-preview/images/partners/moeys.png"
                          alt="ក្រសួងអប់រំ យុវជន និងកីឡា"
-                         class="max-h-16 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                         class="max-h-16 w-auto object-contain group-hover:scale-108 transition-transform duration-300">
                 </div>
                 <div class="space-y-1.5 w-full">
                     <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-iis-blue uppercase tracking-wider">MoEYS</span>
@@ -1259,11 +1267,11 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="bg-slate-50/80 hover:bg-white rounded-2xl p-5 border border-gray-200/80 hover:border-iis-blue shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col items-center text-center justify-between group">
+            <div class="reveal fade-in-up delay-200 bg-slate-50/80 hover:bg-white rounded-2xl p-5 border border-gray-200/80 hover:border-iis-blue shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col items-center text-center justify-between group">
                 <div class="h-20 flex items-center justify-center p-1 mb-3">
                     <img src="/iis-school-preview/images/partners/cambridge.png"
                          alt="Cambridge English Qualifications"
-                         class="max-h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                         class="max-h-14 w-auto object-contain group-hover:scale-108 transition-transform duration-300">
                 </div>
                 <div class="space-y-1.5 w-full">
                     <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-rose-100 text-rose-700 uppercase tracking-wider">Cambridge</span>
@@ -1277,11 +1285,11 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="bg-slate-50/80 hover:bg-white rounded-2xl p-5 border border-gray-200/80 hover:border-iis-blue shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col items-center text-center justify-between group">
+            <div class="reveal fade-in-up delay-300 bg-slate-50/80 hover:bg-white rounded-2xl p-5 border border-gray-200/80 hover:border-iis-blue shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col items-center text-center justify-between group">
                 <div class="h-20 flex items-center justify-center p-1 mb-3">
                     <img src="/iis-school-preview/images/partners/dtp.png"
                          alt="DTP Education Solutions"
-                         class="max-h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                         class="max-h-14 w-auto object-contain group-hover:scale-108 transition-transform duration-300">
                 </div>
                 <div class="space-y-1.5 w-full">
                     <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-100 text-indigo-700 uppercase tracking-wider">DTP Solutions</span>
@@ -1295,11 +1303,11 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="bg-slate-50/80 hover:bg-white rounded-2xl p-5 border border-gray-200/80 hover:border-iis-blue shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col items-center text-center justify-between group">
+            <div class="reveal fade-in-up delay-400 bg-slate-50/80 hover:bg-white rounded-2xl p-5 border border-gray-200/80 hover:border-iis-blue shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col items-center text-center justify-between group">
                 <div class="h-20 flex items-center justify-center p-1 mb-3">
                     <img src="/iis-school-preview/images/partners/hsk.png"
                          alt="HSK Chinese Proficiency Test"
-                         class="max-h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                         class="max-h-14 w-auto object-contain group-hover:scale-108 transition-transform duration-300">
                 </div>
                 <div class="space-y-1.5 w-full">
                     <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800 uppercase tracking-wider">HSK Standard</span>
@@ -1313,11 +1321,11 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="bg-slate-50/80 hover:bg-white rounded-2xl p-5 border border-gray-200/80 hover:border-iis-blue shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col items-center text-center justify-between group">
+            <div class="reveal fade-in-up delay-500 bg-slate-50/80 hover:bg-white rounded-2xl p-5 border border-gray-200/80 hover:border-iis-blue shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col items-center text-center justify-between group">
                 <div class="h-20 flex items-center justify-center p-1 mb-3">
                     <img src="/iis-school-preview/images/partners/hskk.png"
                          alt="HSKK Chinese Speaking Test"
-                         class="max-h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                         class="max-h-14 w-auto object-contain group-hover:scale-108 transition-transform duration-300">
                 </div>
                 <div class="space-y-1.5 w-full">
                     <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 uppercase tracking-wider">HSKK Oral</span>
@@ -1337,7 +1345,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <section class="py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-white border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         
-        <div class="max-w-3xl mx-auto text-center space-y-3 mb-14">
+        <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal fade-in-up">
             <span class="inline-block px-3.5 py-1 rounded-full bg-iis-blue/10 text-iis-blue font-bold text-xs uppercase tracking-wider">
                 Our Core Philosophy &amp; Motto
             </span>
@@ -1353,10 +1361,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
             
-            <div class="bg-white hover:bg-[#F8FAFF] rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-iis-blue shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center justify-between group">
+            <div class="reveal fade-in-up delay-100 bg-white hover:bg-[#F8FAFF] rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-iis-blue shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col items-center text-center justify-between group">
                 <div class="flex flex-col items-center w-full">
                     
-                    <div class="w-20 h-20 rounded-2xl bg-blue-50 text-iis-blue flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-iis-blue group-hover:text-white transition-all duration-300 shadow-inner">
+                    <div class="w-20 h-20 rounded-2xl bg-blue-50 text-iis-blue flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-iis-blue group-hover:text-white transition-all duration-300 shadow-inner">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 14l9-5-9-5-9 5 9 5z"/>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
@@ -1379,15 +1387,15 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="bg-white hover:bg-[#F8FAFF] rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-iis-blue shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center justify-between group">
+            <div class="reveal fade-in-up delay-200 bg-white hover:bg-[#F8FAFF] rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-emerald-500 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col items-center text-center justify-between group">
                 <div class="flex flex-col items-center w-full">
                     
-                    <div class="w-20 h-20 rounded-2xl bg-blue-50 text-iis-blue flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-iis-blue group-hover:text-white transition-all duration-300 shadow-inner">
+                    <div class="w-20 h-20 rounded-2xl bg-blue-50 text-iis-blue flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-inner">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-base sm:text-lg font-black text-navy font-khmer leading-snug mb-3 group-hover:text-iis-blue transition-colors">
+                    <h3 class="text-base sm:text-lg font-black text-navy font-khmer leading-snug mb-3 group-hover:text-emerald-700 transition-colors">
                         Moral Virtue &amp; Integrity
                     </h3>
                     <p class="text-xs sm:text-sm text-slate-600 font-khmer leading-relaxed text-center sm:text-left">
@@ -1403,15 +1411,15 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="bg-white hover:bg-[#F8FAFF] rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-iis-blue shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center justify-between group">
+            <div class="reveal fade-in-up delay-300 bg-white hover:bg-[#F8FAFF] rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-amber-500 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col items-center text-center justify-between group">
                 <div class="flex flex-col items-center w-full">
                     
-                    <div class="w-20 h-20 rounded-2xl bg-blue-50 text-iis-blue flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-iis-blue group-hover:text-white transition-all duration-300 shadow-inner">
+                    <div class="w-20 h-20 rounded-2xl bg-blue-50 text-iis-blue flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-inner">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
                         </svg>
                     </div>
-                    <h3 class="text-base sm:text-lg font-black text-navy font-khmer leading-snug mb-3 group-hover:text-iis-blue transition-colors">
+                    <h3 class="text-base sm:text-lg font-black text-navy font-khmer leading-snug mb-3 group-hover:text-amber-700 transition-colors">
                         Core Values &amp; 21st-Century Skills
                     </h3>
                     <p class="text-xs sm:text-sm text-slate-600 font-khmer leading-relaxed text-center sm:text-left">
@@ -1427,15 +1435,15 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="bg-white hover:bg-[#F8FAFF] rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-iis-blue shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center justify-between group">
+            <div class="reveal fade-in-up delay-400 bg-white hover:bg-[#F8FAFF] rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-indigo-500 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col items-center text-center justify-between group">
                 <div class="flex flex-col items-center w-full">
                     
-                    <div class="w-20 h-20 rounded-2xl bg-blue-50 text-iis-blue flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-iis-blue group-hover:text-white transition-all duration-300 shadow-inner">
+                    <div class="w-20 h-20 rounded-2xl bg-blue-50 text-iis-blue flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-inner">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-base sm:text-lg font-black text-navy font-khmer leading-snug mb-3 group-hover:text-iis-blue transition-colors">
+                    <h3 class="text-base sm:text-lg font-black text-navy font-khmer leading-snug mb-3 group-hover:text-indigo-700 transition-colors">
                         &quot;Learn Today, Lead Tomorrow&quot;
                     </h3>
                     <p class="text-xs sm:text-sm text-slate-600 font-khmer leading-relaxed text-center sm:text-left">
@@ -1462,7 +1470,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         
         <div>
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 reveal fade-in-up">
                 <div class="space-y-2 max-w-2xl">
                     <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-iis-blue font-bold text-xs uppercase tracking-wider">
                         Educational Stages
@@ -1483,12 +1491,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                                                        <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between group">
+                                                                        <div class="reveal fade-in-up delay-100 bg-white rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                         <div>
                             <div class="relative h-44 overflow-hidden bg-navy-dark">
                                 <img src="/iis-school-preview/images/programs/kindergarten.jpg"
                                      alt="Kindergarten Program"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                                 <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-xs text-navy font-bold text-xs shadow-xs">
                                     អាយុ ២.៥ - ៥ ឆ្នាំ
@@ -1516,12 +1524,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             </a>
                         </div>
                     </div>
-                                                        <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between group">
+                                                        <div class="reveal fade-in-up delay-200 bg-white rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                         <div>
                             <div class="relative h-44 overflow-hidden bg-navy-dark">
                                 <img src="/iis-school-preview/images/programs/primary.jpg"
                                      alt="Primary School Program"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                                 <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-xs text-navy font-bold text-xs shadow-xs">
                                     ថ្នាក់ទី ១ - ទី ៦
@@ -1549,12 +1557,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             </a>
                         </div>
                     </div>
-                                                        <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between group">
+                                                        <div class="reveal fade-in-up delay-300 bg-white rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                         <div>
                             <div class="relative h-44 overflow-hidden bg-navy-dark">
                                 <img src="/iis-school-preview/images/programs/secondary.jpg"
                                      alt="Secondary School Program"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                                 <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-xs text-navy font-bold text-xs shadow-xs">
                                     ថ្នាក់ទី ៧ - ទី ៩
@@ -1582,12 +1590,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             </a>
                         </div>
                     </div>
-                                                        <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between group">
+                                                        <div class="reveal fade-in-up delay-400 bg-white rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                         <div>
                             <div class="relative h-44 overflow-hidden bg-navy-dark">
                                 <img src="/iis-school-preview/images/programs/high-school.jpg"
                                      alt="High School Program"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                                 <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-xs text-navy font-bold text-xs shadow-xs">
                                     ថ្នាក់ទី ១០ - ទី ១២
@@ -1620,7 +1628,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         
         <div class="pt-10 border-t border-gray-150">
-            <div class="max-w-3xl mb-10 space-y-2">
+            <div class="max-w-3xl mb-10 space-y-2 reveal fade-in-up">
                 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-bold text-xs uppercase tracking-wider">
                     Languages &amp; Enrichment
                 </span>
@@ -1634,12 +1642,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                                                        <div class="bg-slate-50/70 rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+                                                                        <div class="reveal fade-in-up delay-100 bg-slate-50/70 hover:bg-white rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                         <div>
                             <div class="relative h-44 overflow-hidden bg-navy-dark">
                                 <img src="/iis-school-preview/images/school/trilingual-learning.jpg"
                                      alt="Khmer National Curriculum"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
                                 
                                 
@@ -1679,12 +1687,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             </a>
                         </div>
                     </div>
-                                                        <div class="bg-slate-50/70 rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+                                                        <div class="reveal fade-in-up delay-200 bg-slate-50/70 hover:bg-white rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                         <div>
                             <div class="relative h-44 overflow-hidden bg-navy-dark">
                                 <img src="/iis-school-preview/images/programs/english.jpg"
                                      alt="International English Program"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
                                 
                                 
@@ -1724,12 +1732,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             </a>
                         </div>
                     </div>
-                                                        <div class="bg-slate-50/70 rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+                                                        <div class="reveal fade-in-up delay-300 bg-slate-50/70 hover:bg-white rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                         <div>
                             <div class="relative h-44 overflow-hidden bg-navy-dark">
                                 <img src="/iis-school-preview/images/programs/chinese.jpg"
                                      alt="Chinese Language &amp; Cultural Program"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
                                 
                                 
@@ -1769,12 +1777,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             </a>
                         </div>
                     </div>
-                                                        <div class="bg-slate-50/70 rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+                                                        <div class="reveal fade-in-up delay-400 bg-slate-50/70 hover:bg-white rounded-2xl overflow-hidden border border-gray-200/90 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                         <div>
                             <div class="relative h-44 overflow-hidden bg-navy-dark">
                                 <img src="/iis-school-preview/images/programs/ai-robotics.jpg"
                                      alt="Computer, AI &amp; Robotics Program"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
                                 
                                 
@@ -1810,7 +1818,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             </div>
 
             
-            <div class="mt-12 bg-gradient-to-br from-[#031138] via-[#051C57] to-[#0741E7] rounded-3xl p-6 sm:p-10 text-white shadow-xl">
+            <div class="mt-12 bg-gradient-to-br from-[#031138] via-[#051C57] to-[#0741E7] rounded-3xl p-6 sm:p-10 text-white shadow-xl reveal fade-in-up">
                 <div class="max-w-3xl mb-8 space-y-2">
                     <span class="inline-block px-3 py-1 rounded-full bg-white/10 text-blue-200 font-bold text-xs uppercase tracking-wider border border-white/20">
                         Trilingual Framework
@@ -1825,7 +1833,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     
-                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 space-y-4 hover:bg-white/15 transition-colors">
+                    <div class="reveal fade-in-up delay-100 bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 space-y-4 hover:bg-white/15 hover-lift transition-all duration-300">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-2.5">
                                 <img src="/iis-school-preview/images/flags/khmer.png" alt="កម្ពុជា" class="w-8 h-5 object-cover rounded shadow">
@@ -1853,7 +1861,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     
-                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 space-y-4 hover:bg-white/15 transition-colors">
+                    <div class="reveal fade-in-up delay-200 bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 space-y-4 hover:bg-white/15 hover-lift transition-all duration-300">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-2.5">
                                 <img src="/iis-school-preview/images/flags/uk.png" alt="UK" class="w-8 h-5 object-cover rounded shadow">
@@ -1884,7 +1892,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     
-                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 space-y-4 hover:bg-white/15 transition-colors">
+                    <div class="reveal fade-in-up delay-300 bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 space-y-4 hover:bg-white/15 hover-lift transition-all duration-300">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-2.5">
                                 <img src="/iis-school-preview/images/flags/china.png" alt="China" class="w-8 h-5 object-cover rounded shadow">
@@ -1916,14 +1924,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 
 
 <section class="py-16 lg:py-24 bg-slate-50 border-y border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="max-w-3xl mx-auto text-center space-y-3 mb-12">
+        <div class="max-w-3xl mx-auto text-center space-y-3 mb-12 reveal fade-in-up">
             <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-iis-blue font-bold text-xs uppercase tracking-wider">
                 Experiential Learning
             </span>
@@ -1938,16 +1945,16 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             
-            <div class="group relative rounded-2xl overflow-hidden shadow-sm bg-white border border-gray-200">
+            <div class="reveal fade-in-up delay-100 group relative rounded-2xl overflow-hidden shadow-2xs hover:shadow-xl hover-lift bg-white border border-gray-200/90 transition-all duration-300">
                 <div class="h-60 overflow-hidden">
                     <img src="/iis-school-preview/images/school/robotics-activity.jpg"
                          alt="សិស្សានុសិស្សកំពុងរៀន AI មនុស្សយន្តនៅ iiS"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                         class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                          loading="lazy">
                 </div>
                 <div class="p-4 space-y-1">
                     <span class="text-[11px] font-bold text-iis-red uppercase tracking-wide">AI &amp; Robotics Lab</span>
-                    <h3 class="font-bold text-navy text-sm sm:text-base">
+                    <h3 class="font-bold text-navy text-sm sm:text-base group-hover:text-iis-blue transition-colors">
                         Coding &amp; Robotics Engineering
                     </h3>
                     <p class="text-xs text-gray-500">
@@ -1957,16 +1964,16 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="group relative rounded-2xl overflow-hidden shadow-sm bg-white border border-gray-200">
+            <div class="reveal fade-in-up delay-200 group relative rounded-2xl overflow-hidden shadow-2xs hover:shadow-xl hover-lift bg-white border border-gray-200/90 transition-all duration-300">
                 <div class="h-60 overflow-hidden">
                     <img src="/iis-school-preview/images/school/trilingual-learning.jpg"
                          alt="ការរៀន ៣ ភាសានៅ iiS"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                         class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                          loading="lazy">
                 </div>
                 <div class="p-4 space-y-1">
                     <span class="text-[11px] font-bold text-iis-blue uppercase tracking-wide">Trilingual Immersion</span>
-                    <h3 class="font-bold text-navy text-sm sm:text-base">
+                    <h3 class="font-bold text-navy text-sm sm:text-base group-hover:text-iis-blue transition-colors">
                         Trilingual Immersion in Action
                     </h3>
                     <p class="text-xs text-gray-500">
@@ -1976,16 +1983,16 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="group relative rounded-2xl overflow-hidden shadow-sm bg-white border border-gray-200">
+            <div class="reveal fade-in-up delay-300 group relative rounded-2xl overflow-hidden shadow-2xs hover:shadow-xl hover-lift bg-white border border-gray-200/90 transition-all duration-300">
                 <div class="h-60 overflow-hidden">
                     <img src="/iis-school-preview/images/campus/science-lab.jpg"
                          alt="បន្ទប់ពិសោធន៍វិទ្យាសាស្ត្រ iiS"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                         class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                          loading="lazy">
                 </div>
                 <div class="p-4 space-y-1">
                     <span class="text-[11px] font-bold text-iis-green uppercase tracking-wide">Science &amp; Discovery</span>
-                    <h3 class="font-bold text-navy text-sm sm:text-base">
+                    <h3 class="font-bold text-navy text-sm sm:text-base group-hover:text-iis-blue transition-colors">
                         Hands-On Science Lab Discoveries
                     </h3>
                     <p class="text-xs text-gray-500">
@@ -1995,16 +2002,16 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="group relative rounded-2xl overflow-hidden shadow-sm bg-white border border-gray-200">
+            <div class="reveal fade-in-up delay-100 group relative rounded-2xl overflow-hidden shadow-2xs hover:shadow-xl hover-lift bg-white border border-gray-200/90 transition-all duration-300">
                 <div class="h-60 overflow-hidden">
                     <img src="/iis-school-preview/images/school/music-melodica.jpg"
                          alt="ថ្នាក់តន្ត្រី និងមេឡូឌីកា"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                         class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                          loading="lazy">
                 </div>
                 <div class="p-4 space-y-1">
                     <span class="text-[11px] font-bold text-purple-600 uppercase tracking-wide">Creative Arts</span>
-                    <h3 class="font-bold text-navy text-sm sm:text-base">
+                    <h3 class="font-bold text-navy text-sm sm:text-base group-hover:text-iis-blue transition-colors">
                         Music &amp; Melodica Classes
                     </h3>
                     <p class="text-xs text-gray-500">
@@ -2014,16 +2021,16 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="group relative rounded-2xl overflow-hidden shadow-sm bg-white border border-gray-200">
+            <div class="reveal fade-in-up delay-200 group relative rounded-2xl overflow-hidden shadow-2xs hover:shadow-xl hover-lift bg-white border border-gray-200/90 transition-all duration-300">
                 <div class="h-60 overflow-hidden">
                     <img src="/iis-school-preview/images/school/cooking-life-skills.jpg"
                          alt="បំណិនជីវិត និងការធ្វើម្ហូប"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                         class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                          loading="lazy">
                 </div>
                 <div class="p-4 space-y-1">
                     <span class="text-[11px] font-bold text-amber-600 uppercase tracking-wide">Life Skills</span>
-                    <h3 class="font-bold text-navy text-sm sm:text-base">
+                    <h3 class="font-bold text-navy text-sm sm:text-base group-hover:text-iis-blue transition-colors">
                         Culinary Arts &amp; Life Skills
                     </h3>
                     <p class="text-xs text-gray-500">
@@ -2033,16 +2040,16 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="group relative rounded-2xl overflow-hidden shadow-sm bg-white border border-gray-200">
+            <div class="reveal fade-in-up delay-300 group relative rounded-2xl overflow-hidden shadow-2xs hover:shadow-xl hover-lift bg-white border border-gray-200/90 transition-all duration-300">
                 <div class="h-60 overflow-hidden">
                     <img src="/iis-school-preview/images/school/football-sports-match.jpg"
                          alt="កីឡាបាល់ទាត់ និងការប្រកួត"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                         class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                          loading="lazy">
                 </div>
                 <div class="p-4 space-y-1">
                     <span class="text-[11px] font-bold text-sky-600 uppercase tracking-wide">Sports &amp; Wellness</span>
-                    <h3 class="font-bold text-navy text-sm sm:text-base">
+                    <h3 class="font-bold text-navy text-sm sm:text-base group-hover:text-iis-blue transition-colors">
                         Football &amp; Athletic Tournaments
                     </h3>
                     <p class="text-xs text-gray-500">
@@ -2066,7 +2073,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section id="campuses" class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="max-w-3xl mx-auto text-center space-y-3 mb-14">
+        <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal fade-in-up">
             <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-iis-blue font-bold text-xs uppercase tracking-wider">
                 Our Campuses
             </span>
@@ -2081,19 +2088,19 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             
-            <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-gray-200 shadow-sm space-y-6 flex flex-col justify-between">
+            <div class="reveal-left bg-slate-50 hover:bg-white rounded-3xl p-6 sm:p-8 border border-gray-200/90 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 space-y-6 flex flex-col justify-between group">
                 <div class="space-y-4">
                     <div class="relative h-56 rounded-2xl overflow-hidden bg-navy-dark">
                         <img src="/iis-school-preview/images/school/iis-building-campus.jpg"
                              alt="សាខាអូរដឹម សាលា អាយឌាលី អន្តរជាតិ"
-                             class="w-full h-full object-cover">
+                             class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                         <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-iis-blue text-white text-xs font-bold shadow-md">
                             Campus 1 (Odem) • 2 Buildings
                         </span>
                     </div>
 
                     <div class="space-y-2">
-                        <h3 class="text-xl font-bold text-navy">
+                        <h3 class="text-xl font-bold text-navy group-hover:text-iis-blue transition-colors">
                             Odem Main Campus
                         </h3>
                         <p class="text-xs sm:text-sm text-gray-600 flex items-start gap-2">
@@ -2126,19 +2133,19 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-gray-200 shadow-sm space-y-6 flex flex-col justify-between">
+            <div class="reveal-right bg-slate-50 hover:bg-white rounded-3xl p-6 sm:p-8 border border-gray-200/90 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 space-y-6 flex flex-col justify-between group">
                 <div class="space-y-4">
                     <div class="relative h-56 rounded-2xl overflow-hidden bg-navy-dark">
                         <img src="/iis-school-preview/images/school/building-facade.jpg"
                              alt="សាខាកំបូល សាលា អាយឌាលី អន្តរជាតិ"
-                             class="w-full h-full object-cover">
+                             class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                         <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-bold shadow-md">
                             Campus 2 (Kamboul) • 2 Buildings
                         </span>
                     </div>
 
                     <div class="space-y-2">
-                        <h3 class="text-xl font-bold text-navy">
+                        <h3 class="text-xl font-bold text-navy group-hover:text-iis-blue transition-colors">
                             Kamboul Campus
                         </h3>
                         <p class="text-xs sm:text-sm text-gray-600 flex items-start gap-2">
@@ -2172,44 +2179,44 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
 
         
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
-            <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-2xs space-y-2">
-                <div class="w-10 h-10 mx-auto rounded-xl bg-blue-50 text-iis-blue flex items-center justify-center">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center reveal fade-in-up">
+            <div class="p-4 rounded-2xl bg-white hover:bg-slate-50 border border-gray-200/90 shadow-2xs hover:shadow-md hover-lift transition-all space-y-2 group">
+                <div class="w-10 h-10 mx-auto rounded-xl bg-blue-50 text-iis-blue flex items-center justify-center group-hover:scale-110 transition-transform">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
                 </div>
                 <div class="font-bold text-navy text-xs sm:text-sm">បណ្ណាល័យ</div>
                 <div class="text-[11px] text-gray-500">រាប់ពាន់ក្បាល</div>
             </div>
-            <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-2xs space-y-2">
-                <div class="w-10 h-10 mx-auto rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center">
+            <div class="p-4 rounded-2xl bg-white hover:bg-slate-50 border border-gray-200/90 shadow-2xs hover:shadow-md hover-lift transition-all space-y-2 group">
+                <div class="w-10 h-10 mx-auto rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
                 </div>
                 <div class="font-bold text-navy text-xs sm:text-sm">បន្ទប់ពិសោធន៍</div>
                 <div class="text-[11px] text-gray-500">វិទ្យាសាស្ត្រ &amp; គីមី</div>
             </div>
-            <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-2xs space-y-2">
-                <div class="w-10 h-10 mx-auto rounded-xl bg-red-50 text-iis-red flex items-center justify-center">
+            <div class="p-4 rounded-2xl bg-white hover:bg-slate-50 border border-gray-200/90 shadow-2xs hover:shadow-md hover-lift transition-all space-y-2 group">
+                <div class="w-10 h-10 mx-auto rounded-xl bg-red-50 text-iis-red flex items-center justify-center group-hover:scale-110 transition-transform">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
                 </div>
                 <div class="font-bold text-navy text-xs sm:text-sm">កុំព្យូទ័រ &amp; AI</div>
                 <div class="text-[11px] text-gray-500">Robot &amp; Coding</div>
             </div>
-            <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-2xs space-y-2">
-                <div class="w-10 h-10 mx-auto rounded-xl bg-emerald-50 text-iis-green flex items-center justify-center">
+            <div class="p-4 rounded-2xl bg-white hover:bg-slate-50 border border-gray-200/90 shadow-2xs hover:shadow-md hover-lift transition-all space-y-2 group">
+                <div class="w-10 h-10 mx-auto rounded-xl bg-emerald-50 text-iis-green flex items-center justify-center group-hover:scale-110 transition-transform">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
                 <div class="font-bold text-navy text-xs sm:text-sm">ទីលានកីឡា</div>
                 <div class="text-[11px] text-gray-500">បាល់ទាត់ &amp; សកម្មភាព</div>
             </div>
-            <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-2xs space-y-2">
-                <div class="w-10 h-10 mx-auto rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
+            <div class="p-4 rounded-2xl bg-white hover:bg-slate-50 border border-gray-200/90 shadow-2xs hover:shadow-md hover-lift transition-all space-y-2 group">
+                <div class="w-10 h-10 mx-auto rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
                 </div>
                 <div class="font-bold text-navy text-xs sm:text-sm">អាហារដ្ឋាន</div>
                 <div class="text-[11px] text-gray-500">អនាម័យ &amp; អាហារូបត្ថម្ភ</div>
             </div>
-            <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-2xs space-y-2">
-                <div class="w-10 h-10 mx-auto rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center">
+            <div class="p-4 rounded-2xl bg-white hover:bg-slate-50 border border-gray-200/90 shadow-2xs hover:shadow-md hover-lift transition-all space-y-2 group">
+                <div class="w-10 h-10 mx-auto rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
                 </div>
                 <div class="font-bold text-navy text-xs sm:text-sm">រថយន្តសាលា</div>
@@ -2224,7 +2231,7 @@ document.addEventListener('DOMContentLoaded', function() {
          x-data="{ showModal: false, modalImg: '', modalName: '', modalTitle: '', modalDesc: '' }">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 reveal fade-in-up">
             <div class="space-y-3 max-w-3xl">
                 <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wider">
                     <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
@@ -2238,7 +2245,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </p>
             </div>
             <a href="/iis-school-preview/en/achievements"
-               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-iis-blue text-iis-blue font-bold text-sm hover:bg-iis-blue hover:text-white transition-colors duration-200 self-start md:self-auto shrink-0 shadow-2xs">
+               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-iis-blue text-iis-blue font-bold text-sm hover:bg-iis-blue hover:text-white hover-lift transition-all duration-200 self-start md:self-auto shrink-0 shadow-2xs">
                 <span>View All Achievements</span>
                 <span>→</span>
             </a>
@@ -2246,11 +2253,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                                            <div class="bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                                            <div class="reveal fade-in-up delay-100 bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/90 shadow-2xs hover:shadow-2xl hover-lift transition-all duration-300 flex flex-col justify-between overflow-hidden group">
                     <div class="p-5">
                         
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 shadow-2xs">
                                 <span>🏆</span>
                                 <span>WSC 2026</span>
                             </span>
@@ -2265,7 +2272,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <img src="/iis-school-preview/images/achievements/wsc-2026-dara-reachsey.jpg"
                                      alt="The World Scholar's Cup 2026 - DARA REACHSEY"
                                      loading="lazy"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 
                                 <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white p-4 text-center">
                                     <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl">
@@ -2304,11 +2311,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                                            <div class="reveal fade-in-up delay-200 bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/90 shadow-2xs hover:shadow-2xl hover-lift transition-all duration-300 flex flex-col justify-between overflow-hidden group">
                     <div class="p-5">
                         
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 shadow-2xs">
                                 <span>🏆</span>
                                 <span>WSC 2026</span>
                             </span>
@@ -2323,7 +2330,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <img src="/iis-school-preview/images/achievements/wsc-2026-ly-sophany.jpg"
                                      alt="The World Scholar's Cup 2026 - LY SOPHANY"
                                      loading="lazy"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 
                                 <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white p-4 text-center">
                                     <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl">
@@ -2362,11 +2369,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                                            <div class="reveal fade-in-up delay-300 bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/90 shadow-2xs hover:shadow-2xl hover-lift transition-all duration-300 flex flex-col justify-between overflow-hidden group">
                     <div class="p-5">
                         
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 shadow-2xs">
                                 <span>🏆</span>
                                 <span>WSC 2026</span>
                             </span>
@@ -2381,7 +2388,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <img src="/iis-school-preview/images/achievements/wsc-2026-bunsry-sreyoun.jpg"
                                      alt="The World Scholar's Cup 2026 - BUNSRY SREYOUN"
                                      loading="lazy"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 
                                 <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white p-4 text-center">
                                     <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl">
@@ -2420,11 +2427,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                                            <div class="reveal fade-in-up delay-100 bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/90 shadow-2xs hover:shadow-2xl hover-lift transition-all duration-300 flex flex-col justify-between overflow-hidden group">
                     <div class="p-5">
                         
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 shadow-2xs">
                                 <span>🏆</span>
                                 <span>WSC 2026</span>
                             </span>
@@ -2439,7 +2446,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <img src="/iis-school-preview/images/achievements/wsc-2026-sok-setsakda.jpg"
                                      alt="The World Scholar's Cup 2026 - SOK SETSAKDA"
                                      loading="lazy"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 
                                 <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white p-4 text-center">
                                     <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl">
@@ -2478,11 +2485,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                                            <div class="reveal fade-in-up delay-200 bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/90 shadow-2xs hover:shadow-2xl hover-lift transition-all duration-300 flex flex-col justify-between overflow-hidden group">
                     <div class="p-5">
                         
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 shadow-2xs">
                                 <span>🏆</span>
                                 <span>WSC 2026</span>
                             </span>
@@ -2497,7 +2504,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <img src="/iis-school-preview/images/achievements/wsc-2026-ly-syhor.jpg"
                                      alt="The World Scholar's Cup 2026 - LY SYHOR"
                                      loading="lazy"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 
                                 <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white p-4 text-center">
                                     <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl">
@@ -2536,11 +2543,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                                            <div class="reveal fade-in-up delay-300 bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/90 shadow-2xs hover:shadow-2xl hover-lift transition-all duration-300 flex flex-col justify-between overflow-hidden group">
                     <div class="p-5">
                         
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 shadow-2xs">
                                 <span>🏆</span>
                                 <span>WSC 2026</span>
                             </span>
@@ -2555,7 +2562,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <img src="/iis-school-preview/images/achievements/wsc-2026-lee-souyen.jpg"
                                      alt="The World Scholar's Cup 2026 - LEE SOUYEN"
                                      loading="lazy"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 
                                 <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white p-4 text-center">
                                     <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl">
@@ -2594,11 +2601,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                                            <div class="reveal fade-in-up delay-100 bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/90 shadow-2xs hover:shadow-2xl hover-lift transition-all duration-300 flex flex-col justify-between overflow-hidden group">
                     <div class="p-5">
                         
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 shadow-2xs">
                                 <span>🏆</span>
                                 <span>WSC 2026</span>
                             </span>
@@ -2613,7 +2620,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <img src="/iis-school-preview/images/achievements/wsc-2026-ratha-dathaiya.jpg"
                                      alt="The World Scholar's Cup 2026 - RATHA DATHAIYA"
                                      loading="lazy"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 
                                 <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white p-4 text-center">
                                     <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl">
@@ -2652,11 +2659,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                                            <div class="reveal fade-in-up delay-200 bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/90 shadow-2xs hover:shadow-2xl hover-lift transition-all duration-300 flex flex-col justify-between overflow-hidden group">
                     <div class="p-5">
                         
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 shadow-2xs">
                                 <span>🏆</span>
                                 <span>WSC 2026</span>
                             </span>
@@ -2671,7 +2678,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <img src="/iis-school-preview/images/achievements/wsc-2026-heng-soksereyboth.jpg"
                                      alt="The World Scholar's Cup 2026 - HENG SOKSEREYBOTH"
                                      loading="lazy"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 
                                 <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white p-4 text-center">
                                     <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl">
@@ -2710,11 +2717,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                                            <div class="reveal fade-in-up delay-300 bg-white rounded-2xl border border-gray-200/90 hover:border-amber-400/90 shadow-2xs hover:shadow-2xl hover-lift transition-all duration-300 flex flex-col justify-between overflow-hidden group">
                     <div class="p-5">
                         
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 shadow-2xs">
                                 <span>🏆</span>
                                 <span>WSC 2026</span>
                             </span>
@@ -2729,7 +2736,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <img src="/iis-school-preview/images/achievements/wsc-2026-heang-tongeng.jpg"
                                      alt="The World Scholar's Cup 2026 - HEANG TONGENG"
                                      loading="lazy"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
                                 
                                 <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white p-4 text-center">
                                     <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl">
@@ -2820,7 +2827,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="py-16 lg:py-24 bg-white border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="max-w-3xl mx-auto text-center space-y-3 mb-14">
+        <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal fade-in-up">
             <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-iis-blue font-bold text-xs uppercase tracking-wider">
                 Community Voices
             </span>
@@ -2833,10 +2840,10 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                            <div class="bg-slate-50 rounded-2xl p-6 border border-gray-200 shadow-2xs flex flex-col justify-between space-y-4">
+                                            <div class="reveal fade-in-up delay-100 bg-slate-50/70 hover:bg-white rounded-2xl p-6 border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between space-y-4 group">
                     <div class="space-y-3">
                         
-                        <div class="flex items-center gap-1 text-amber-400 text-sm">
+                        <div class="flex items-center gap-1 text-amber-400 text-sm group-hover:scale-105 transition-transform duration-300 origin-left">
                                                             <span>★</span>
                                                             <span>★</span>
                                                             <span>★</span>
@@ -2850,19 +2857,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="pt-3 border-t border-gray-200 flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-iis-blue text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-iis-blue text-white flex items-center justify-center font-bold text-sm flex-shrink-0 group-hover:scale-105 transition-transform duration-300 shadow-xs">
                             L
                         </div>
                         <div class="min-w-0 flex-1">
-                            <div class="font-bold text-navy text-xs sm:text-sm truncate">Lok Chumteav Sok Kunthea</div>
+                            <div class="font-bold text-navy text-xs sm:text-sm truncate group-hover:text-iis-blue transition-colors">Lok Chumteav Sok Kunthea</div>
                             <div class="text-[11px] text-gray-500 truncate">Parent of Grade 4 &amp; 7 Scholars</div>
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-slate-50 rounded-2xl p-6 border border-gray-200 shadow-2xs flex flex-col justify-between space-y-4">
+                                            <div class="reveal fade-in-up delay-200 bg-slate-50/70 hover:bg-white rounded-2xl p-6 border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between space-y-4 group">
                     <div class="space-y-3">
                         
-                        <div class="flex items-center gap-1 text-amber-400 text-sm">
+                        <div class="flex items-center gap-1 text-amber-400 text-sm group-hover:scale-105 transition-transform duration-300 origin-left">
                                                             <span>★</span>
                                                             <span>★</span>
                                                             <span>★</span>
@@ -2876,19 +2883,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="pt-3 border-t border-gray-200 flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-iis-blue text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-iis-blue text-white flex items-center justify-center font-bold text-sm flex-shrink-0 group-hover:scale-105 transition-transform duration-300 shadow-xs">
                             M
                         </div>
                         <div class="min-w-0 flex-1">
-                            <div class="font-bold text-navy text-xs sm:text-sm truncate">Mr. Sambath Chea</div>
+                            <div class="font-bold text-navy text-xs sm:text-sm truncate group-hover:text-iis-blue transition-colors">Mr. Sambath Chea</div>
                             <div class="text-[11px] text-gray-500 truncate">Kindergarten Parent</div>
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-slate-50 rounded-2xl p-6 border border-gray-200 shadow-2xs flex flex-col justify-between space-y-4">
+                                            <div class="reveal fade-in-up delay-300 bg-slate-50/70 hover:bg-white rounded-2xl p-6 border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between space-y-4 group">
                     <div class="space-y-3">
                         
-                        <div class="flex items-center gap-1 text-amber-400 text-sm">
+                        <div class="flex items-center gap-1 text-amber-400 text-sm group-hover:scale-105 transition-transform duration-300 origin-left">
                                                             <span>★</span>
                                                             <span>★</span>
                                                             <span>★</span>
@@ -2902,19 +2909,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="pt-3 border-t border-gray-200 flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-iis-blue text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-iis-blue text-white flex items-center justify-center font-bold text-sm flex-shrink-0 group-hover:scale-105 transition-transform duration-300 shadow-xs">
                             M
                         </div>
                         <div class="min-w-0 flex-1">
-                            <div class="font-bold text-navy text-xs sm:text-sm truncate">Ms. Elena Rossi</div>
+                            <div class="font-bold text-navy text-xs sm:text-sm truncate group-hover:text-iis-blue transition-colors">Ms. Elena Rossi</div>
                             <div class="text-[11px] text-gray-500 truncate">International STEAM Educator</div>
                         </div>
                     </div>
                 </div>
-                                            <div class="bg-slate-50 rounded-2xl p-6 border border-gray-200 shadow-2xs flex flex-col justify-between space-y-4">
+                                            <div class="reveal fade-in-up delay-400 bg-slate-50/70 hover:bg-white rounded-2xl p-6 border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between space-y-4 group">
                     <div class="space-y-3">
                         
-                        <div class="flex items-center gap-1 text-amber-400 text-sm">
+                        <div class="flex items-center gap-1 text-amber-400 text-sm group-hover:scale-105 transition-transform duration-300 origin-left">
                                                             <span>★</span>
                                                             <span>★</span>
                                                             <span>★</span>
@@ -2928,11 +2935,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="pt-3 border-t border-gray-200 flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-iis-blue text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-iis-blue text-white flex items-center justify-center font-bold text-sm flex-shrink-0 group-hover:scale-105 transition-transform duration-300 shadow-xs">
                             M
                         </div>
                         <div class="min-w-0 flex-1">
-                            <div class="font-bold text-navy text-xs sm:text-sm truncate">Ms. Malika Seng</div>
+                            <div class="font-bold text-navy text-xs sm:text-sm truncate group-hover:text-iis-blue transition-colors">Ms. Malika Seng</div>
                             <div class="text-[11px] text-gray-500 truncate">Alumna, University Scholar in Melbourne</div>
                         </div>
                     </div>
@@ -2944,7 +2951,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="py-16 lg:py-24 bg-slate-50 border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 reveal fade-in-up">
             <div class="space-y-2 max-w-2xl">
                 <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-iis-blue font-bold text-xs uppercase tracking-wider">
                     School News
@@ -2957,19 +2964,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 </p>
             </div>
             <a href="/iis-school-preview/en/news"
-               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-iis-blue text-iis-blue font-bold text-sm hover:bg-iis-blue hover:text-white transition-colors duration-200 self-start md:self-auto">
+               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-iis-blue text-iis-blue font-bold text-sm hover:bg-iis-blue hover:text-white hover-lift transition-all duration-200 self-start md:self-auto shadow-2xs">
                 <span>View All Announcements</span>
                 <span>→</span>
             </a>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+                                            <div class="reveal fade-in-up delay-100 bg-white rounded-2xl overflow-hidden border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                     <div>
                         <div class="relative h-48 overflow-hidden bg-navy-dark">
                             <img src="/iis-school-preview/images/school/football-sports-match.jpg"
                                  alt="Strength, Spirit, and Sportsmanship: Highlights from the iiS Annual Sports Festival 2026"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                 class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                                  loading="lazy">
                                                             <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-navy/80 text-white text-[11px] font-medium backdrop-blur-xs">
                                     09 Sep 2026
@@ -2988,18 +2995,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     <div class="px-5 pb-5 pt-1">
                         <a href="/iis-school-preview/en/news/iis-sports-day-2026"
-                           class="text-xs font-bold text-iis-blue hover:text-iis-blue-dark inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                           class="text-xs font-bold text-iis-blue hover:text-iis-blue-dark inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                             <span>Read Article</span>
-                            <span>→</span>
+                            <span class="inline-block group-hover:translate-x-1 transition-transform">→</span>
                         </a>
                     </div>
                 </div>
-                                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+                                            <div class="reveal fade-in-up delay-200 bg-white rounded-2xl overflow-hidden border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                     <div>
                         <div class="relative h-48 overflow-hidden bg-navy-dark">
                             <img src="/iis-school-preview/images/programs/chinese.jpg"
                                  alt="100% Pass Rate: iiS Scholars Achieve Outstanding Scores in Official HSK Mandarin Examinations"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                 class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                                  loading="lazy">
                                                             <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-navy/80 text-white text-[11px] font-medium backdrop-blur-xs">
                                     08 Sep 2026
@@ -3018,18 +3025,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     <div class="px-5 pb-5 pt-1">
                         <a href="/iis-school-preview/en/news/hsk-exam-success-100"
-                           class="text-xs font-bold text-iis-blue hover:text-iis-blue-dark inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                           class="text-xs font-bold text-iis-blue hover:text-iis-blue-dark inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                             <span>Read Article</span>
-                            <span>→</span>
+                            <span class="inline-block group-hover:translate-x-1 transition-transform">→</span>
                         </a>
                     </div>
                 </div>
-                                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+                                            <div class="reveal fade-in-up delay-300 bg-white rounded-2xl overflow-hidden border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 flex flex-col justify-between group">
                     <div>
                         <div class="relative h-48 overflow-hidden bg-navy-dark">
                             <img src="/iis-school-preview/images/school/speech-presentation-contest.jpg"
                                  alt="Inauguration of the iiS University Counseling &amp; Global Careers Advisory Center"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                 class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                                  loading="lazy">
                                                             <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-navy/80 text-white text-[11px] font-medium backdrop-blur-xs">
                                     31 Aug 2026
@@ -3048,9 +3055,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     <div class="px-5 pb-5 pt-1">
                         <a href="/iis-school-preview/en/news/university-counseling-center"
-                           class="text-xs font-bold text-iis-blue hover:text-iis-blue-dark inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                           class="text-xs font-bold text-iis-blue hover:text-iis-blue-dark inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                             <span>Read Article</span>
-                            <span>→</span>
+                            <span class="inline-block group-hover:translate-x-1 transition-transform">→</span>
                         </a>
                     </div>
                 </div>
@@ -3061,7 +3068,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="py-16 lg:py-24 bg-white border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="max-w-3xl mx-auto text-center space-y-3 mb-14">
+        <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal fade-in-up">
             <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-iis-blue font-bold text-xs uppercase tracking-wider">
                 Admissions
             </span>
@@ -3076,11 +3083,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
             
-            <div class="p-6 rounded-2xl bg-slate-50 border border-gray-200 relative space-y-3">
-                <span class="w-10 h-10 rounded-xl bg-iis-blue text-white flex items-center justify-center font-bold text-base shadow-sm">
+            <div class="reveal fade-in-up delay-100 p-6 rounded-2xl bg-slate-50/70 hover:bg-white border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 relative space-y-3 group">
+                <span class="w-10 h-10 rounded-xl bg-iis-blue text-white flex items-center justify-center font-bold text-base shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                     1
                 </span>
-                <h3 class="font-bold text-navy text-base">
+                <h3 class="font-bold text-navy text-base group-hover:text-iis-blue transition-colors">
                     Inquire &amp; Consult
                 </h3>
                 <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
@@ -3089,11 +3096,11 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="p-6 rounded-2xl bg-slate-50 border border-gray-200 relative space-y-3">
-                <span class="w-10 h-10 rounded-xl bg-iis-blue text-white flex items-center justify-center font-bold text-base shadow-sm">
+            <div class="reveal fade-in-up delay-200 p-6 rounded-2xl bg-slate-50/70 hover:bg-white border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 relative space-y-3 group">
+                <span class="w-10 h-10 rounded-xl bg-iis-blue text-white flex items-center justify-center font-bold text-base shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                     2
                 </span>
-                <h3 class="font-bold text-navy text-base">
+                <h3 class="font-bold text-navy text-base group-hover:text-iis-blue transition-colors">
                     Campus Tour &amp; Assessment
                 </h3>
                 <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
@@ -3102,11 +3109,11 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="p-6 rounded-2xl bg-slate-50 border border-gray-200 relative space-y-3">
-                <span class="w-10 h-10 rounded-xl bg-iis-blue text-white flex items-center justify-center font-bold text-base shadow-sm">
+            <div class="reveal fade-in-up delay-300 p-6 rounded-2xl bg-slate-50/70 hover:bg-white border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 relative space-y-3 group">
+                <span class="w-10 h-10 rounded-xl bg-iis-blue text-white flex items-center justify-center font-bold text-base shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                     3
                 </span>
-                <h3 class="font-bold text-navy text-base">
+                <h3 class="font-bold text-navy text-base group-hover:text-iis-blue transition-colors">
                     Application &amp; Documents
                 </h3>
                 <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
@@ -3115,11 +3122,11 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="p-6 rounded-2xl bg-slate-50 border border-gray-200 relative space-y-3">
-                <span class="w-10 h-10 rounded-xl bg-iis-green text-white flex items-center justify-center font-bold text-base shadow-sm">
+            <div class="reveal fade-in-up delay-400 p-6 rounded-2xl bg-slate-50/70 hover:bg-white border border-gray-200/90 hover:border-iis-blue/40 shadow-2xs hover:shadow-xl hover-lift transition-all duration-300 relative space-y-3 group">
+                <span class="w-10 h-10 rounded-xl bg-iis-green text-white flex items-center justify-center font-bold text-base shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                     4
                 </span>
-                <h3 class="font-bold text-navy text-base">
+                <h3 class="font-bold text-navy text-base group-hover:text-iis-blue transition-colors">
                     Welcome to iiS
                 </h3>
                 <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
@@ -3130,7 +3137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <div class="text-center mt-10">
             <a href="/iis-school-preview/en/admissions"
-               class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-iis-blue hover:bg-iis-blue-dark text-white font-bold text-sm shadow-sm transition-colors">
+               class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-iis-blue hover:bg-iis-blue-dark text-white font-bold text-sm shadow-md hover:shadow-xl hover-lift transition-all duration-300">
                 <span>Complete Admissions Guide</span>
                 <span>→</span>
             </a>
@@ -3143,7 +3150,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
-            <div class="lg:col-span-5 space-y-6">
+            <div class="lg:col-span-5 space-y-6 reveal-left">
                 <span class="inline-block px-3 py-1 rounded-full bg-white/10 text-blue-200 border border-white/20 font-bold text-xs uppercase tracking-wider">
                     Free Consultation
                 </span>
@@ -3184,8 +3191,8 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             
-            <div class="lg:col-span-7">
-                <div class="bg-white rounded-3xl p-6 sm:p-8 text-navy shadow-2xl">
+            <div class="lg:col-span-7 reveal-right">
+                <div class="bg-white rounded-3xl p-6 sm:p-8 text-navy shadow-2xl border border-white/20">
                     
                     
                     <form action="/iis-school-preview/en/contact" method="POST"
@@ -3206,7 +3213,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 </div>
 
-                        <input type="hidden" name="_token" value="vadddN9pg7JZfiDzQsc9ZEBLEE10TnBuQA32TSZP" autocomplete="off">                        
+                        <input type="hidden" name="_token" value="BqR8OXiHKo5aee73uWCQMw1zSvLDrbly2aWGTp6A" autocomplete="off">                        
                         <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off">
                         <input type="hidden" name="preferred_language" value="en">
 
@@ -3289,8 +3296,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         
                         <button type="submit"
                                 :disabled="submitting"
-                                class="w-full py-4 rounded-xl bg-iis-red hover:bg-iis-red-dark text-white font-bold text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50">
-                            <span x-show="!submitting">Submit Consultation Request →</span>
+                                class="w-full py-4 rounded-xl bg-gradient-to-r from-iis-red to-[#FF2E44] hover:from-[#FF2E44] hover:to-iis-red text-white font-bold text-sm sm:text-base shadow-lg hover:shadow-xl hover-lift transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 group">
+                            <span x-show="!submitting" class="flex items-center gap-2">
+                                <span>Submit Consultation Request</span>
+                                <span class="group-hover:translate-x-1.5 inline-block transition-transform duration-200">→</span>
+                            </span>
                             <span x-show="submitting" x-cloak class="flex items-center gap-2">
                                 <svg class="animate-spin h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -3443,7 +3453,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         School Newsletter
                     </h4>
                     <form action="/iis-school-preview/en/newsletter/subscribe" method="POST" class="space-y-2"><p class="text-[10px] text-white/50 py-1">Preview: Newsletter subscription disabled in static preview.</p>
-                        <input type="hidden" name="_token" value="vadddN9pg7JZfiDzQsc9ZEBLEE10TnBuQA32TSZP" autocomplete="off">                        <div class="flex">
+                        <input type="hidden" name="_token" value="BqR8OXiHKo5aee73uWCQMw1zSvLDrbly2aWGTp6A" autocomplete="off">                        <div class="flex">
                             <input type="email" name="email" required
                                    placeholder="Enter your email address..."
                                    class="w-full bg-white/10 border border-white/20 text-white placeholder-gray-400 text-xs px-3 py-2 rounded-l-lg focus:outline-none focus:border-iis-blue">
